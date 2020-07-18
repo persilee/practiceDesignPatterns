@@ -1,6 +1,7 @@
 package net.lishaoy.entity.fruit;
 
 import net.lishaoy.entity.Fruit;
+import net.lishaoy.entity.pack.OrangePack;
 
 public class Orange implements Fruit {
 
@@ -22,5 +23,11 @@ public class Orange implements Fruit {
     public void setPrice(int price) {
 
         this.price = price;
+    }
+
+    public void packing(OrangePack orangePack) {
+
+        orangePack.packaging();
+
     }
 }
